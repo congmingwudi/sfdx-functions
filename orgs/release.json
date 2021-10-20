@@ -1,6 +1,7 @@
 {
   "orgName": "sfdx-functions - Release Test Org",
   "edition": "Enterprise",
+  "features": ["Functions"],
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
