@@ -1,0 +1,24 @@
+minimum_cumulusci_version: '3.45.0'
+project:
+    name: sfdx-functions
+    package:
+        name: sfdx-functions
+        api_version: '52.0'
+    git:
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/sfdx-functions/tests
+            options:
+                outputdir: robot/sfdx-functions/results
+
+    robot_testdoc:
+        options:
+            path: robot/sfdx-functions/tests
+            output: robot/sfdx-functions/doc/sfdx-functions_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
